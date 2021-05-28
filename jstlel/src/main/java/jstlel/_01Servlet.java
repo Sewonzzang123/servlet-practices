@@ -37,6 +37,8 @@ public class _01Servlet extends HttpServlet {
 		request.setAttribute("object", obj);
 		request.setAttribute("user", vo);
 		
+		
+		
 		request.getRequestDispatcher("/WEB-INF/views/01.jsp").forward(request, response);
 	}
 
