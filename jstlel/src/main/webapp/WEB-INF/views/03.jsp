@@ -12,8 +12,9 @@
 </head>
 <body>
 <h1>jstl c:forEach</h1>
+	<c:set var="count" value="${fn:length(users) }" />
 	<c:forEach items="${users }" var="user" varStatus="status">
-		${status.index }:${status.count }[${user.no } : ${user.name }]<br/>
+		[${count-status.index }](${status.index }:${status.count })[${user.no } : ${user.name }]<br/>
 	</c:forEach>
 </body>
 </html>
